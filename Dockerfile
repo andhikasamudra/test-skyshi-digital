@@ -14,8 +14,6 @@ WORKDIR /
 
 COPY --from=builder /build .
 
-EXPOSE 8080
-
-USER nonroot:nonroot
+EXPOSE 3030
 
 CMD ["./app"]
