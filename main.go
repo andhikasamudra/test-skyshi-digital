@@ -4,7 +4,7 @@ import (
 	"log"
 
 	"github.com/andhikasamudra/fiber-starter-pack/config"
-	"github.com/andhikasamudra/fiber-starter-pack/pkg/book"
+	"github.com/andhikasamudra/fiber-starter-pack/pkg/todo"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/uptrace/bun/extra/bundebug"
@@ -17,9 +17,9 @@ func main() {
 	app := fiber.New()
 	app.Use(cors.New())
 	app.Get("/", func(ctx *fiber.Ctx) error {
-		return ctx.Send([]byte("Testis"))
+		return ctx.Send([]byte("OK"))
 	})
 	api := app.Group("/api")
-	book.InitRoute(api, db)
-	log.Fatal(app.Listen(":8080"))
+	todo.InitRoute(api, db)
+	log.Fatal(app.Listen(":3030"))
 }
