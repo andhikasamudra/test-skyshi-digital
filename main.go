@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 
-	"github.com/andhikasamudra/fiber-starter-pack/config"
-	"github.com/andhikasamudra/fiber-starter-pack/pkg/todo"
+	"github.com/andhikasamudra/test-skyshi-digital/config"
+	"github.com/andhikasamudra/test-skyshi-digital/pkg/todo"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/uptrace/bun/extra/bundebug"

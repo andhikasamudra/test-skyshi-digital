@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/andhikasamudra/fiber-starter-pack/pkg/todo/dto"
-	"github.com/andhikasamudra/fiber-starter-pack/pkg/todo/models"
+	"github.com/andhikasamudra/test-skyshi-digital/pkg/todo/dto"
+	"github.com/andhikasamudra/test-skyshi-digital/pkg/todo/models"
 	"github.com/gofiber/fiber/v2"
 	"strconv"
 )

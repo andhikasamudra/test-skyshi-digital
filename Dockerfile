@@ -14,6 +14,4 @@ WORKDIR /
 
 COPY --from=builder /build .
 
-EXPOSE 3030
-
 CMD ["./app"]

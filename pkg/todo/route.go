@@ -1,9 +1,9 @@
 package todo
 
 import (
-	"github.com/andhikasamudra/fiber-starter-pack/pkg/todo/handler"
-	"github.com/andhikasamudra/fiber-starter-pack/pkg/todo/models"
-	"github.com/andhikasamudra/fiber-starter-pack/pkg/todo/service"
+	"github.com/andhikasamudra/test-skyshi-digital/pkg/todo/handler"
+	"github.com/andhikasamudra/test-skyshi-digital/pkg/todo/models"
+	"github.com/andhikasamudra/test-skyshi-digital/pkg/todo/service"
 	"github.com/gofiber/fiber/v2"
 	"github.com/uptrace/bun"
 )

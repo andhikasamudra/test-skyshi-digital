@@ -3,9 +3,9 @@ package handler
 import (
 	"net/http"
 
-	"github.com/andhikasamudra/fiber-starter-pack/internal"
-	"github.com/andhikasamudra/fiber-starter-pack/pkg/todo/dto"
-	"github.com/andhikasamudra/fiber-starter-pack/pkg/todo/service"
+	"github.com/andhikasamudra/test-skyshi-digital/internal"
+	"github.com/andhikasamudra/test-skyshi-digital/pkg/todo/dto"
+	"github.com/andhikasamudra/test-skyshi-digital/pkg/todo/service"
 	"github.com/gofiber/fiber/v2"
 )
 

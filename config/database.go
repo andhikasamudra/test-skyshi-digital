@@ -10,11 +10,10 @@ import (
 )
 
 func GetConnection() *bun.DB {
-	dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?tls=skip-verify&autocommit=true",
+	dsn := fmt.Sprintf("%s:%s@tcp(%s:3306)/%s?tls=skip-verify&autocommit=true",
 		os.Getenv("MYSQL_USER"),
 		os.Getenv("MYSQL_PASSWORD"),
 		os.Getenv("MYSQL_HOST"),
-		os.Getenv("MYSQL_PORT"),
 		os.Getenv("MYSQL_DBNAME"),
 	)
 	sqldb, err := sql.Open("mysql", dsn)
