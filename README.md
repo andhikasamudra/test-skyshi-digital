@@ -1,9 +1,3 @@
-## Fiber Starter Pack
-
-build with [Fiber](https://gofiber.io/) and [Bun](https://bun.uptrace.dev/)
-
-setup to your local env first
-
 ```shell
 cp env-example.sh local_env.sh
 source local_env.sh
@@ -18,5 +12,7 @@ go get
 to run 
 
 ```shell
+./tools/db-migrate.sh
+
 go run main.go
 ```
