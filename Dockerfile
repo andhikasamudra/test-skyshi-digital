@@ -5,7 +5,7 @@ WORKDIR /build
 
 COPY . .
 
-RUN GOOS=linux go build -mod=vendor -ldflags="-s -w" -o app
+RUN GOOS=linux go build -ldflags="-s -w" -o app
 
 ## Deploy
 FROM alpine
@@ -14,4 +14,6 @@ WORKDIR /
 
 COPY --from=builder /build .
 
-CMD ["./app"]
+EXPOSE 3030
+
+CMD ["./app", "server"]
